@@ -1,0 +1,43 @@
+*{
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+        background-color: rgba(16, 160, 196, 0.863);
+}
+header{
+    height: 60px;
+    position: fixed;
+    top: 0%;
+    width: 50%;
+    background-color: darkgray;
+    min-height: calc(100vh - 385px);
+    overflow: auto;
+}
+aside{
+    height: 50px;
+    position: absolute;
+    bottom: 50%;
+    width: 15%;
+    background-color: darkgreen;
+    min-height: calc(30vh - 40px);
+    overflow: auto;
+}
+nav{
+    position: absolute;
+    top: 25;
+    right: 0;
+    width: 75;
+    background-color: darkkhaki;
+    z-index: 1;
+}
+main{
+    position: absolute;
+    bottom: 50%;
+    right: 0;
+    z-index: 1;
+
+
+    background-color: darkorange;
+}
