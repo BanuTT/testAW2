@@ -1,0 +1,80 @@
+/*Version de movil*/
+
+body {
+    display: flex;
+    background-color: lightblue;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+#contenedor-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 107px;
+}
+
+aside,
+main,
+footer {
+    flex-basis: 100%;
+    flex-grow: 1;
+}
+
+aside {
+    order: 3;
+    background-color: rgb(213, 228, 85);
+}
+
+#aside1 {
+    order: 3;
+    background-color: red;
+}
+
+#aside2 {
+    order: 4;
+    background-color: turquoise;
+}
+
+main {
+    background-color: lightgreen;
+    order: 2;
+}
+
+header {
+    background-color: lightskyblue;
+    order: 1;
+    position: fixed;
+    width: 100%;
+}
+
+footer {
+    order: 4;
+    background-color: lightslategray;
+}
+
+
+/*Versión para tablet*/
+
+@media (min-width: 768px) {
+    aside {
+        flex-basis: auto;
+    }
+}
+
+
+/*Version de Escritorio*/
+
+@media (min-width: 1000px) {
+    #aside1 {
+        order: 2;
+    }
+    main {
+        order: 3;
+        flex-basis: 60%;
+    }
+    #aside2 {
+        order: 4;
+    }
+}

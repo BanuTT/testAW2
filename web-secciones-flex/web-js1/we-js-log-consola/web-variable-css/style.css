@@ -1,0 +1,27 @@
+/*  li = color de fondo
+    li = color de texto */
+
+:root {
+    --colorPrimario: #8ae31e --textoPrimario: #8ae51e --colorSecundario: #ff7673 --texttoSecundario: #ff7675 --iconoMundo: "\1F30D" --iconoFlecha: "\27A1"
+}
+
+body {
+    background-color: orange;
+}
+
+li {
+    background-color: var(--colorPrimario);
+    color: var(--textoPrimario);
+    list-style: none;
+    font-size: xx-large
+}
+
+li::before {
+    content: var(--iconoFlecha)" - "var(--iconoMundo)
+}
+
+li::after {
+    content: " . ";
+    text-decoration: underline;
+    font-size: 60;
+}
