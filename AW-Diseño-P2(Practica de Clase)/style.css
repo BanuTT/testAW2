@@ -1,0 +1,28 @@
+* {
+    background-color: lightseagreen;
+}
+
+#button1 {
+    color: black;
+}
+
+#button2 {
+    color: black;
+}
+
+#button3 {
+    color: black;
+}
+
+#button4 {
+    color: black;
+}
+
+#button5 {
+    color: black;
+}
+
+nav {
+    position: absolute;
+    top: 1;
+}
